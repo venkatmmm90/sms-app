@@ -1,0 +1,20 @@
+{
+  "name": "smsapp",
+  "version": "1.0.0",
+  "description": "sms application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatmmm90/sms-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkatmmm90/sms-app/issues"
+  },
+  "homepage": "https://github.com/venkatmmm90/sms-app#readme"
+}

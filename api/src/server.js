@@ -1,5 +1,6 @@
 var express = require('express'),
     app     = express();
+var mongoose = require('mongoose');
 
 app.get('/', (req, res) => res.send('Hello World! test'));
 
@@ -10,3 +11,26 @@ app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
 
 module.exports = app ;
+
+
+
+var schema  = mongoose.Schema;
+var templateSchema = new schema({
+	header:String,
+	text:String,
+	access:String,
+	isfavourite:Boolean,
+	id:String,
+	createdAt:String,
+	createdBy:String
+});
+
+var Template=mongoose.model('Template',templateSchema);
+module.exports=Template;
+
+mongoose.connect('mongodb+srv://admin:limat@cluster0-xr1wf.mongodb.net/smsapp');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("database connected");
+});

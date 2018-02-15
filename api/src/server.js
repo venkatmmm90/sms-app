@@ -12,7 +12,9 @@ console.log('Server running on http://%s:%s', ip, port);
 
 module.exports = app ;
 
-var templateController = require.main.require('controllers/templateController');
+
+var path = require('path');
+var templateController = require(path.resolve('./controllers/templateController'));
 templateController(app);
 
 

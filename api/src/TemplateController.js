@@ -1,4 +1,4 @@
-var template=require('../models/template');
+var template=require('template');
 var bodyParser = require('body-parser');
 
 module.exports= function(app){

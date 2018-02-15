@@ -16,8 +16,7 @@ var templateController = require('./controllers/templateController');
 templateController(app);
 
 
-
-mongoose.connect('mongodb+srv://admin:limat@cluster0-xr1wf.mongodb.net/smsapp');
+mongoose.connect('mongodb://aravind:limat@ds235768.mlab.com:35768/smsapp');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {

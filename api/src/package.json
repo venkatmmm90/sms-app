@@ -196,6 +196,8 @@
     },
     "mongodb": "^3.0.2",
     "mongoose": "^5.0.5",
+    "mongoose-paginate": "^5.0.3",
+    "mongoose-sequence": "^4.0.1",
     "ms": {
       "integrity": "sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=",
       "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz",
